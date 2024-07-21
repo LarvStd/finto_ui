@@ -199,6 +199,24 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
-  
+  // document.addEventListener('DOMContentLoaded', function () {
+  //   const toggle = document.getElementById('toggle');
+  //   const prices = document.querySelectorAll('.price');
+
+  //   function updatePrices() {
+  //     prices.forEach(priceElement => {
+  //       const isYearly = toggle.checked;
+  //       const monthlyPrice = priceElement.getAttribute('data-monthly');
+  //       const yearlyPrice = priceElement.getAttribute('data-yearly');
+  //       priceElement.innerHTML =
+  //         `<sup>Rp</sup>${isYearly ? yearlyPrice : monthlyPrice}<span> / ${isYearly ? 'th' : 'bl'}</span>`;
+  //     });
+  //   }
+
+  //   toggle.addEventListener('change', updatePrices);
+
+  //   // Initial update
+  //   updatePrices();
+  // });
 
 })();
