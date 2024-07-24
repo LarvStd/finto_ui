@@ -2389,6 +2389,215 @@ h6 {
     font-size: 14px;
   }
 
+  /*--------------------------------------------------------------
+# Order Section
+--------------------------------------------------------------*/
+  .order .order-item {
+    background-color: var(--surface-color);
+    box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .order .order-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  .order .order-item p {
+    padding: 0;
+    margin: 0;
+    font-family: var(--heading-font);
+    font-size: 12px;
+  }
+
+  .order .btn {
+    font-size: 10px;
+    padding: 2px 5px;
+  }
+
+  .order .btn-sales {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: #fff;
+  }
+
+  .order .btn-quotation {
+    background-color: #fff;
+    border-color: var(--default-color);
+    color: var(--default-color);
+  }
+
+  .order .text-end {
+    margin-right: 0;
+  }
+
+  /* Order Page Styling */
+  .order-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+
+  .order-header div {
+    flex: 1;
+    padding: 10px;
+  }
+
+  .order-number h3 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .customer-info p,
+  .order-details p {
+    margin: 0;
+  }
+
+  .order-tabs {
+    margin-bottom: 15px;
+  }
+
+  .order-tabs .tablink {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .order-tabs .tablink:hover {
+    background-color: #ddd;
+  }
+
+  .order-tabs .tablink.active {
+    background-color: #ccc;
+  }
+
+  .tabcontent {
+    padding: 10px 0;
+  }
+
+  .tabcontent.active {
+    display: block;
+  }
+
+  .order-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .order-table th,
+  .order-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-size: 12px;
+  }
+
+  .order-table th {
+    background-color: #f1f1f1;
+  }
+
+  .order-summary {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .summary-item {
+    padding: 10px;
+  }
+  
+  .summary-item.total table {
+    width: auto;
+    margin-left: auto;
+  }
+  
+  .summary-table td {
+    padding: 5px 10px;
+    text-align: right;
+  }
+  
+  .summary-table td:first-child {
+    text-align: left;
+  }
+  
+  .summary-item.total p {
+    font-weight: bold;
+  }
+
+  /*--------------------------------------------------------------
+# Subs Section
+--------------------------------------------------------------*/
+  .subs .subs-item {
+    background-color: var(--surface-color);
+    box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .subs .subs-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  .subs .subs-item p {
+    padding: 0;
+    margin: 0;
+    font-family: var(--heading-font);
+    font-size: 12px;
+  }
+
+  .subs .btn {
+    font-size: 10px;
+    padding: 2px 5px;
+  }
+
+  .subs .btn-sales {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: #fff;
+  }
+
+  .subs .btn-quotation {
+    background-color: #fff;
+    border-color: var(--default-color);
+    color: var(--default-color);
+  }
+
+  .subs .text-end {
+    margin-right: 0;
+  }
+
+  .section-title-subs {
+    text-align: center;
+    position: relative;
+  }
+
+  .section-title-subs p {
+    color: var(--heading-color);
+    margin: 10px 0 0 0;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--heading-font);
+  }
+
+  .section-title-subs p .description-title {
+    color: var(--accent-color);
+  }
 }
 
 /* Navmenu - Mobile */
@@ -2524,7 +2733,7 @@ h6 {
     }
 
     .mobile-nav-active .mobile-nav-toggle {
-      color: #fff;
+      color: #444;
       position: absolute;
       font-size: 32px;
       top: 15px;
@@ -2537,7 +2746,7 @@ h6 {
       position: fixed;
       overflow: hidden;
       inset: 0;
-      background: rgba(33, 37, 41, 0.8);
+      background: #fff;
       transition: 0.3s;
     }
 
@@ -4556,4 +4765,214 @@ h6 {
     font-size: 14px;
   }
 
+  /*--------------------------------------------------------------
+# Order Section
+--------------------------------------------------------------*/
+  .order .order-item {
+    background-color: var(--surface-color);
+    box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .order .order-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  .order .order-item p {
+    padding: 0;
+    margin: 0;
+    font-family: var(--heading-font);
+    font-size: 12px;
+  }
+
+  .order .btn {
+    font-size: 10px;
+    padding: 2px 5px;
+  }
+
+  .order .btn-sales {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: #fff;
+  }
+
+  .order .btn-quotation {
+    background-color: #fff;
+    border-color: var(--default-color);
+    color: var(--default-color);
+  }
+
+  .order .text-end {
+    margin-right: 0;
+  }
+
+  /* Order Page Styling */
+  .order-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+
+  .order-header div {
+    flex: 1;
+    padding: 10px;
+  }
+
+  .order-number h3 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .customer-info p,
+  .order-details p {
+    margin: 0;
+  }
+
+  .order-tabs {
+    margin-bottom: 15px;
+  }
+
+  .order-tabs .tablink {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .order-tabs .tablink:hover {
+    background-color: #ddd;
+  }
+
+  .order-tabs .tablink.active {
+    background-color: #ccc;
+  }
+
+  .tabcontent {
+    padding: 10px 0;
+  }
+
+  .tabcontent.active {
+    display: block;
+  }
+
+  .order-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .order-table th,
+  .order-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-size: 12px;
+  }
+
+  .order-table th {
+    background-color: #f1f1f1;
+  }
+
+  .order-summary {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .summary-item {
+    padding: 10px;
+  }
+  
+  .summary-item.total table {
+    width: auto;
+    margin-left: auto;
+  }
+  
+  .summary-table td {
+    padding: 5px 10px;
+    text-align: right;
+  }
+  
+  .summary-table td:first-child {
+    text-align: left;
+  }
+  
+  .summary-item.total p {
+    font-weight: bold;
+  }
+
+  /*--------------------------------------------------------------
+# Subs Section
+--------------------------------------------------------------*/
+  .subs .subs-item {
+    background-color: var(--surface-color);
+    box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .subs .subs-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  .subs .subs-item p {
+    padding: 0;
+    margin: 0;
+    font-family: var(--heading-font);
+    font-size: 12px;
+  }
+
+  .subs .btn {
+    font-size: 10px;
+    padding: 2px 5px;
+  }
+
+  .subs .btn-sales {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: #fff;
+  }
+
+  .subs .btn-quotation {
+    background-color: #fff;
+    border-color: var(--default-color);
+    color: var(--default-color);
+  }
+
+  .subs .text-end {
+    margin-right: 0;
+  }
+
+  .section-title-subs {
+    text-align: center;
+    position: relative;
+  }
+
+  .section-title-subs p {
+    color: var(--heading-color);
+    margin: 10px 0 0 0;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--heading-font);
+  }
+
+  .section-title-subs p .description-title {
+    color: var(--accent-color);
+  }
 }
+

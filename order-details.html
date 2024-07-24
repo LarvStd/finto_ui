@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>My Order</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/finto-light-blue.png" rel="icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="order-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/finto-long.png" alt="">
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#product">Features</a></li>
+          <li><a href="#package">Package</a></li>
+          <li><a href="#recent-posts">News</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <a class="btn-getstarted flex-md-shrink-0" href="signin.html">Sign In</a>
+          <!-- <li><a href="#">My Order</a></li>
+          <li><a href="#">My Subscription</a></li> -->
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <div class="container section-title-subs">
+      <p>My Order</p>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+      <div class="row">
+
+        <!-- order Section -->
+        <section id="order" class="order section">
+
+          <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="row gy-4">
+              <div class="order-header">
+                <div class="order-number">
+                  <h3>S00007</h3>
+                </div>
+                <div class="customer-info">
+                  <table>
+                    <tr>
+                      <td>Customer</td>
+                      <td style="color: rgba(255, 255, 255, 0);">Customer</td>
+                      <td>Gemini Furniture</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>317 Fairchild Dr</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>Fairfield CA 94535</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>United States</td>
+                    </tr>
+                  </table>
+                  
+                </div>
+                <div class="order-details">
+                  <table>
+                    <tr>
+                      <td>Order Date</td>
+                      <td>: 07/22/2024 20:38:49</td>
+                    </tr>
+                    <tr>
+                      <td>Pricelist</td>
+                      <td>: Public Pricelist (IDR)</td>
+                    </tr>
+                    <tr>
+                      <td><b>Payment Terms</b></td>
+                      <td></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              
+              <div class="order-tabs">
+                <button class="tablink active" onclick="openTab(event, 'OrderLines')">Order Lines</button>
+                <button class="tablink" onclick="openTab(event, 'OtherInfo')">Other Info</button>
+              </div>
+              
+              <div id="OrderLines" class="tabcontent">
+                <table class="order-table">
+                  <thead>
+                    <tr>
+                      <th>Product</th>
+                      <th>Description</th>
+                      <th>Quantity</th>
+                      <th>Delivered</th>
+                      <th>Invoiced</th>
+                      <th>Standard Price</th>
+                      <th>Recurring Plan</th>
+                      <th>Recurring Amount</th>
+                      <th>Unit Price</th>
+                      <th>Taxes</th>
+                      <th>Subtotal</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>[FURN_6666] Acoustic Bloc Screens</td>
+                      <td>Acoustic Bloc Screens</td>
+                      <td>5.00</td>
+                      <td>0.00</td>
+                      <td>0.00</td>
+                      <td>295.00</td>
+                      <td></td>
+                      <td></td>
+                      <td>295.00</td>
+                      <td></td>
+                      <td>Rp 1,475.00</td>
+                    </tr>
+                    <tr>
+                      <td>[FURN_8999] Three-Seat Sofa</td>
+                      <td>Three-Seater Sofa with Lounger in Steel Grey Colour</td>
+                      <td>1.00</td>
+                      <td>0.00</td>
+                      <td>0.00</td>
+                      <td>1,500.00</td>
+                      <td></td>
+                      <td></td>
+                      <td>1,500.00</td>
+                      <td></td>
+                      <td>Rp 173.00</td>
+                    </tr>
+                    <tr>
+                      <td>[FURN_8888] Office Lamp</td>
+                      <td>Office Lamp</td>
+                      <td>1.00</td>
+                      <td>0.00</td>
+                      <td>0.00</td>
+                      <td>40.00</td>
+                      <td></td>
+                      <td></td>
+                      <td>40.00</td>
+                      <td></td>
+                      <td>Rp 40.00</td>
+                    </tr>
+                    <tr>
+                      <td>[FURN_7777] Office Chair</td>
+                      <td>Office Chair</td>
+                      <td>1.00</td>
+                      <td>0.00</td>
+                      <td>0.00</td>
+                      <td>70.00</td>
+                      <td></td>
+                      <td></td>
+                      <td>70.00</td>
+                      <td></td>
+                      <td>Rp 18.00</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="order-summary">
+                  <div class="summary-item total">
+                    <table class="summary-table">
+                      <tr>
+                        <td>Total : </td>
+                        <td><b>Rp 1,706.00</b></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                
+              </div>
+              
+              <div id="OtherInfo" class="tabcontent" style="display:none">
+                <p>Other Information will go here.</p>
+              </div>
+              
+            </div>
+
+          </div>
+
+        </section><!-- /order Section -->
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
