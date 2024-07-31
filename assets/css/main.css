@@ -2512,25 +2512,25 @@ h6 {
     display: flex;
     justify-content: flex-end;
   }
-  
+
   .summary-item {
     padding: 10px;
   }
-  
+
   .summary-item.total table {
     width: auto;
     margin-left: auto;
   }
-  
+
   .summary-table td {
     padding: 5px 10px;
     text-align: right;
   }
-  
+
   .summary-table td:first-child {
     text-align: left;
   }
-  
+
   .summary-item.total p {
     font-weight: bold;
   }
@@ -2598,10 +2598,13 @@ h6 {
   .section-title-subs p .description-title {
     color: var(--accent-color);
   }
+
 }
 
 /* Navmenu - Mobile */
 @media (min-width: 300px) {
+
+
   .navmenu {
     padding: 0;
   }
@@ -4888,25 +4891,25 @@ h6 {
     display: flex;
     justify-content: flex-end;
   }
-  
+
   .summary-item {
     padding: 10px;
   }
-  
+
   .summary-item.total table {
     width: auto;
     margin-left: auto;
   }
-  
+
   .summary-table td {
     padding: 5px 10px;
     text-align: right;
   }
-  
+
   .summary-table td:first-child {
     text-align: left;
   }
-  
+
   .summary-item.total p {
     font-weight: bold;
   }
@@ -4974,5 +4977,68 @@ h6 {
   .section-title-subs p .description-title {
     color: var(--accent-color);
   }
-}
 
+
+  .feature-detail form {
+    background: var(--background-color);
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 70%);
+    padding: 3px 10px;
+    position: relative;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    /* Menyelaraskan input dan tombol secara vertikal */
+  }
+
+  /* Style untuk input text */
+  .feature-detail form input[type=text] {
+    border: 0;
+    padding: 4px;
+    border-radius: 4px;
+    width: calc(100% - 40px);
+    /* Menyisakan ruang untuk tombol di samping */
+    background-color: var(--background-color);
+    color: var(--default-color);
+    font-size: 16px;
+  }
+
+  /* Style untuk tombol */
+  .feature-detail form button {
+    background: none;
+    /* Menghilangkan background */
+    color: black;
+    /* Mengubah warna ikon menjadi hitam */
+    border: 0;
+    font-size: 16px;
+    padding: 0 15px;
+    border-radius: 0 4px 4px 0;
+    /* Hanya radius kanan pada tombol */
+    margin: 0;
+    /* Menghilangkan margin */
+    transition: 0.3s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    /* Menyelaraskan ikon secara vertikal */
+    justify-content: center;
+    /* Menyelaraskan ikon secara horizontal */
+  }
+
+  /* Style untuk ikon dalam tombol */
+  .feature-detail form button i {
+    line-height: 0;
+    /* Menghindari jarak vertikal ekstra */
+  }
+
+  /* Efek hover untuk tombol */
+  .feature-detail form button:hover {
+    opacity: 0.8;
+    /* Memberikan efek hover tanpa mengubah warna background */
+  }
+
+  /* Style ketika input dalam focus */
+  .feature-detail form:is(:focus-within) {
+    border-color: var(--accent-color);
+  }
+
+}
